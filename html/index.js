@@ -1,3 +1,4 @@
+//GET request
 fetch("http://localhost:8080/lemma/")
     .then((response) => response.json())
     .then((lemmaAll) => {
