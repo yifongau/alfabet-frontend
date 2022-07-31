@@ -1,3 +1,5 @@
+//GET request
+fetch("/api/lemma")
     .then((response) => response.json())
     .then((lemmaAll) => {
         const listEl = document.getElementById("overzicht");
@@ -32,7 +34,7 @@ window.sendData = function () {
 
     console.log(data)
 
-    const url = 'http://localhost:8080/lemma/';
+    const url = "/api/lemma";
 
     const options = {
         method: 'POST',
